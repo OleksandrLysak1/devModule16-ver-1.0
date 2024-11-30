@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+<h1>Todo List</h1>
+<ul>
+    <li th:each="note : ${notes}">
+        <span th:text="${note.title}">Note Title</span>:
+        <span th:text="${note.content}">Note Content</span>
+    </li>
+</ul>
+</body>
+</html>
